@@ -6,15 +6,24 @@
   </head>
   <body>
     <h1 id="myHeading">JavaScript and the DOM</h1>
-    <p>Making a web page interactive</p>    
-    <p>Things that are purple:</p>
+    <p>Making a web page interactive</p>
 
-    <ul>
-      <li>grapes</li>
-      <li>amethyst</li>
-      <li>lavender</li>
-      <li>plums</li>
-    </ul>
+    <button type="button" id="toggleList">Hide list</button>
+    <div class="list">
+      <p class="description">Things that are purple:</p>
+      <input type="text" class="description">
+      <button type="button" class="description">Change list description</button>
+      <ul>
+        <li>grapes</li>
+        <li>amethyst</li>
+        <li>lavender</li>
+        <li>plums</li>
+      </ul>
+      <input type="text" class="addItemInput">
+      <button type="button" class="addItemButton">Add item</button>
+      <button type="button" class="removeItemButton">Remove last item</button>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
